@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:30025', // 👈 your backend NodePort service
+        target: 'http://localhost:8089', // ✅ your local backend port when running `npm run dev`
         changeOrigin: true,
         secure: false,
       },
